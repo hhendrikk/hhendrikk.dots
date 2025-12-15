@@ -1,0 +1,9 @@
+# Alias
+alias vim="nvim"
+alias l="ls -lha"
+alias lg="lazygit"
+
+# Init
+eval "$(starship init bash)"
+eval "$(zoxide init bash)"
+eval "$(/home/hhendrikk/.local/bin/mise activate bash)"
