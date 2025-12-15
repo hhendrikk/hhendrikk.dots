@@ -1,0 +1,13 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/gruvbox_material_hard_dark.toml"
+]
+
+[window]
+opacity = 1
+decorations =  "None"
+padding = { x = 5, y = 5 }
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+size = 10

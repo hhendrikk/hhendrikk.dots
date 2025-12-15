@@ -1,0 +1,62 @@
+[user]
+	name = Hendrik Mourão
+	email = jhendrik@gmail.com
+
+[core]
+	editor = nvim
+	ignorecase = false
+
+[init]
+	defaultBranch = main
+
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[alias]
+	ci = commit
+	ck = checkout
+	ckb = checkout -b
+	pullo = pull --ff-only
+	pullr = pull --rebase
+	pullp = pull --prune
+	bc = branch -avv
+	st = status
+	cr = cherry-pick
+	mgnoff = merge --no-ff
+	mgsquash = merge --squash
+	lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(cyan)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an %Creset%C(yellow)(%ar)%C(bold blue)>%Creset' --abbrev-commit"
+	lg1 = lg -10
+	lg2 = lg -20
+	lg5 = lg -50
+	stl = "stash list --pretty=format:'%C(cyan)%gd%Cred: %C(yellow)%s'q"
+
+[diff]
+	tool = kdiff3
+
+[merge]
+	tool = kdiff3
+
+[mergetool]
+	prompt = false
+	keepBackup = false
+
+[mergetool "kdiff3"]
+	cmd = kdiff3 $BASE $LOCAL $REMOTE -o $MERGED
