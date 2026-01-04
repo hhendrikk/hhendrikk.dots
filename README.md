@@ -43,3 +43,21 @@ mise shell node@lts
 mise install go
 mise shell go
 ```
+
+- KDiff3
+
+``` shell
+sudo dnf install kdiff3
+```
+
+- CopyQ
+
+``` shell
+sudo dnf install copyq
+```
+
+- Bitwarden
+
+``` shell
+flatpak install com.bitwarden.desktop
+```
