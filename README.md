@@ -61,3 +61,27 @@ sudo dnf install copyq
 ``` shell
 flatpak install com.bitwarden.desktop
 ```
+
+- fd
+
+``` shell
+sudo dnf install fd
+```
+
+- luarocks
+
+``` shell
+sudo dnf install luarocks
+```
+
+- Font
+
+``` shell
+./font_install.sh
+```
+
+- Links
+
+``` shell
+./links.sh
+```
