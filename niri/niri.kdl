@@ -109,8 +109,8 @@ window-rule {
 
 binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
-    Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Mod+D hotkey-overlay-title="App Launcher: Toggle" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
+    Super+Alt+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
     Mod+Shift+E hotkey-overlay-title="Open Files: nautilus" { spawn "nautilus"; }
     Mod+Shift+B hotkey-overlay-title="Open Firefox: firefox" { spawn "firefox"; }
     Mod+Slash hotkey-overlay-title="Open Bitwarden: bitwarden" { spawn-sh "flatpak run com.bitwarden.desktop"; }
