@@ -38,11 +38,10 @@ hotkey-overlay {
     hide-not-bound
 }
 
-/-output "eDP-1" {
-    mode "1920x1080@120.030"
-    scale 1
-    transform "normal"
-    position x=1280 y=0
+output "eDP-1" {
+    mode "1920x1200@60"
+    scale 1.25
+    position x=0 y=0
 }
 
 layout {
@@ -86,6 +85,10 @@ spawn-at-startup "~/hhendrikk.dots/niri/start_bg.sh"
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 window-rule {
+    open-maximized true
+}
+
+window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
 }
@@ -113,7 +116,7 @@ binds {
     Super+Alt+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
     Mod+Shift+E hotkey-overlay-title="Open Files: nautilus" { spawn "nautilus"; }
     Mod+Shift+B hotkey-overlay-title="Open Firefox: firefox" { spawn "firefox"; }
-    Mod+Slash hotkey-overlay-title="Open Bitwarden: bitwarden" { spawn-sh "flatpak run com.bitwarden.desktop"; }
+    Mod+Slash hotkey-overlay-title="Open Bitwarden: bitwarden" { spawn "bitwarden"; }
     Ctrl+Escape hotkey-overlay-title="Open CopyQ: copyq" { spawn-sh "copyq toggle"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
