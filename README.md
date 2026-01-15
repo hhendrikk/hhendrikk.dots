@@ -12,12 +12,6 @@ curl -sS https://starship.rs/install.sh | sh
 sudo dnf install neovim
 ```
 
-- swaybg
-
-``` shell
-sudo dnf install swaybg
-```
-
 - Mise
 
 ``` shell
@@ -48,12 +42,6 @@ mise shell go
 
 ``` shell
 sudo dnf install kdiff3
-```
-
-- CopyQ
-
-``` shell
-sudo dnf install copyq
 ```
 
 - Bitwarden
