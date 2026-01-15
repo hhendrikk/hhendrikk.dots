@@ -44,12 +44,6 @@ mise shell go
 sudo dnf install kdiff3
 ```
 
-- Bitwarden
-
-``` shell
-flatpak install com.bitwarden.desktop
-```
-
 - fd
 
 ``` shell
