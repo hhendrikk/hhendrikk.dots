@@ -80,8 +80,6 @@ layout {
     }
 }
 
-spawn-at-startup "~/hhendrikk.dots/niri/start_bg.sh"
-
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 window-rule {
@@ -117,7 +115,7 @@ binds {
     Mod+Shift+E hotkey-overlay-title="Open Files: nautilus" { spawn "nautilus"; }
     Mod+Shift+B hotkey-overlay-title="Open Firefox: firefox" { spawn "firefox"; }
     Mod+Slash hotkey-overlay-title="Open Bitwarden: bitwarden" { spawn "bitwarden"; }
-    Ctrl+Escape hotkey-overlay-title="Open CopyQ: copyq" { spawn-sh "copyq toggle"; }
+    Ctrl+Escape hotkey-overlay-title="Open clipboard: clipboard-history" { spawn-sh "dms ipc call clipboard toggle"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
