@@ -116,6 +116,7 @@ binds {
     Mod+Shift+B hotkey-overlay-title="Open Firefox: firefox" { spawn "firefox"; }
     Mod+Slash hotkey-overlay-title="Open Bitwarden: bitwarden" { spawn "bitwarden"; }
     Ctrl+Escape hotkey-overlay-title="Open clipboard: clipboard-history" { spawn-sh "dms ipc call clipboard toggle"; }
+    Mod+Shift+q hotkey-overlay-title="Open dbeaver: DBeaver" { spawn-sh "flatpak run io.dbeaver.DBeaverCommunity"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
