@@ -22,6 +22,8 @@ input {
     trackpoint {
         natural-scroll
     }
+
+    disable-power-key-handling
 }
 
 cursor {
