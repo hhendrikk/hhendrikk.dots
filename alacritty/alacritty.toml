@@ -1,16 +1,15 @@
 [general]
-import = [
-    "~/.config/alacritty/themes/gruvbox_material_hard_dark.toml"
-]
+import = ["~/hhendrikk.dots/alacritty/themes/gruvbox_material_hard_dark.toml"]
 
 [window]
-opacity = 1
-decorations =  "None"
-padding = { x = 5, y = 5 }
+opacity = 0.95
+decorations = "none"
+startup_mode = "Maximized"
+padding = { x = 3, y = 3 }
 
 [font]
 normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
-size = 10
+size = 11
 
 [[keyboard.bindings]]
 key = "Return"

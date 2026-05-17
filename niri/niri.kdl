@@ -40,7 +40,7 @@ hotkey-overlay {
 
 output "eDP-1" {
     mode "1920x1200@60"
-    scale 1.25
+    scale 1
     position x=0 y=0
 }
 
@@ -257,5 +257,3 @@ binds {
 
     Mod+Shift+P { power-off-monitors; }
 }
-
-include "dms/cursor.kdl"
