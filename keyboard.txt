@@ -1,0 +1,19 @@
+[custom0]
+binding='<Super>Return'
+command='ptyxis'
+name='terminal'
+
+[custom1]
+binding='<Shift><Super>b'
+command='google-chrome'
+name='navegador'
+
+[custom2]
+binding='<Shift><Super>e'
+command='nautilus'
+name='files'
+
+[custom3]
+binding='<Super>slash'
+command='flatpak run com.bitwarden.desktop'
+name='bitwarden'
